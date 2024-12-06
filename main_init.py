@@ -175,6 +175,7 @@ def play_and_display(event_type, note_id, velocity):
             sampler.stop(note_id)
             notes_on.remove(note_id)
             note_ui.remove_note(note_id)
+            print(1)
 def midi_to_tuple_list(file_path):
     # Open the MIDI file
     midi = mido.MidiFile(file_path)
